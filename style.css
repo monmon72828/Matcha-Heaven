@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-Regular.ttf');
+}
+/* General*/
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fefae0;
+    color: #2d6a4f;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+}
+
+/* Navigation */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #2d6a4f;
+    text-shadow: 0 0 6px #b7e4c7;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #40916c;
+}
+
+/* Heading */
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#d8f3dc, #fefae0);
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+/* Buttons*/
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #2d6a4f;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: #40916c;
+    transform: scale(1.05);
+}
+
+/* Section */
+section {
+    padding: 80px 100px;
+}
+
+/* First letter larger upper case  */
+#about p::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+/* Features */
+.feature {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.feature img {
+    width: 350px;
+    border-radius: 15px;
+}
+
+/* Menu */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 240px;
+    border-radius: 20px;
+    transition: 0.4s;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* Image size */
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+/* Image when hover */
+.card:hover img {
+    transform: scale(1.08);
+}
+
+/* Dropdown */
+details {
+    margin-top: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #2d6a4f;
+}
+
+/* Column */
+#menu p {
+    column-count: 2;
+    column-gap: 20px;
+    column-rule: 1px dotted gray;
+}
+
+/* Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Form*/
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Button */
+button {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #2d6a4f;
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: white;
+}
+
+/* Animation for scrooling */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}

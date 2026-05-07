@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Cute luxury matcha drinks and desserts">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Matcha Heaven</title>
+
+<link rel="icon" href="images/favicon.jpg">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+    <h1>Matcha Heaven 🍵</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Elevate your day with pure matcha elegance 🌸</h2>
+    <p>A calm and beautiful lifestyle in every sip</p>
+    <button onclick="scrollToSection('menu')">Explore Menu</button>
+</section>
+
+<section id="about">
+    <h2>About Our Heavenly Matcha</h2>
+
+    <p>
+        Matcha is a finely ground green tea that has been cherished in Japanese culture for centuries. 
+        Known for its vibrant color and smooth, earthy flavor, matcha offers a unique balance of calm energy and relaxation.
+        Rich in antioxidants, it supports both physical wellness and mental clarity, making it more than just a drink 
+        — it is a lifestyle choice that brings beauty, balance, and tranquility to everyday moments.
+    </p>
+
+    <details>
+        <summary>Why Matcha?</summary>
+        <p>
+            Matcha is loved for its ability to energize the body while calming the mind. 
+            It improves focus, supports wellness, and promotes balance in everyday life.
+        </p>
+    </details>
+</section>
+
+<!-- Feature -->
+<section class="feature fade-in">
+    <img src="images/MatchaWhisk.jpg" alt="Matcha whisk preparation">
+
+    <div>
+        <h2>Our Story In Matcha Heaven</h2>
+        <p>
+            At Matcha Heaven, it all started with the love and passion our CEO had for the matcha culture, we blend traditional Japanese tea culture with modern elegance, 
+            creating a peaceful and luxurious matcha experience for every customer to enjoy premium matcha at our cafe.
+        </p>
+    </div>
+</section>
+
+<!-- Menu -->
+<section id="menu">
+    <h2>Our Signatures At Matcha Heaven</h2>
+
+    <div class="menu-container fade-in">
+
+        <div class="card">
+            <img src="images/MatchaLatte.jpg" alt="Matcha Latte">
+            <h3>Matcha Latte</h3>
+            <details>
+                <summary>View Details</summary>
+                <p>Rich, creamy matcha blended with milk for a smooth finish.</p>
+            </details>
+        </div>
+
+        <div class="card">
+            <img src="images/StrawberryMatcha.jpg" alt="Strawberry Matcha">
+            <h3>Strawberry Matcha</h3>
+            <details>
+                <summary>View Details</summary>
+                <p>A refreshing mix of sweet strawberry and premium matcha.</p>
+            </details>
+        </div>
+
+        <div class="card">
+            <img src="images/MatchaIceCream.jpg" alt="Matcha Ice Cream">
+            <h3>Matcha Ice Cream</h3>
+            <details>
+                <summary>View Details</summary>
+                <p>A rich and creamy dessert with deep matcha flavor.</p>
+            </details>
+        </div>
+
+    </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery-grid fade-in">
+
+        <figure>
+            <img src="images/MatchaDrink.jpg" alt="Fresh matcha drink">
+            <figcaption>Freshly Made Matcha</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/MatchaDessert.jpg" alt="Matcha dessert">
+            <figcaption>Matcha Dessert Freshly Baked</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/MatchaCafe.jpg" alt="Matcha cafe atmosphere">
+            <figcaption>Our Matcha Cafe Atmosphere</figcaption>
+        </figure>
+
+    </div>
+</section>
+
+<!-- Media -->
+<section class="fade-in">
+    <h2>The Full Matcha Experience</h2>
+
+    <video controls width="300">
+        <source src="Video/MatchaVideo.mp4" type="video/mp4">
+    </video>
+
+    <audio controls>
+        <source src="Audio/AudioMp3.mp3" type="audio/mp3">
+    </audio>
+</section>
+
+<!-- Progress bar -->
+<section>
+    <h2>Matcha Popularity In 2026</h2>
+    <progress value="80" max="100"></progress>
+</section>
+
+<!-- Quiz for matcha -->
+<section>
+    <h2>Take this quiz to find out Which Matcha Are You?!🍵</h2>
+
+    <button onclick="checkAnswer('calm')">Calm</button>
+    <button onclick="checkAnswer('sweet')">Sweet</button>
+
+    <p id="quiz-result"></p>
+</section>
+
+<!-- Contact info -->
+<section id="contact">
+    <h2>Contact Us To Help You Get The Best Experience</h2>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Name">
+        <span id="nameError"></span>
+
+        <input type="text" id="email" placeholder="Email">
+        <span id="emailError"></span>
+
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Matcha Heaven</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
